@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Secureee <i class="fa-solid fa-lock"></i> ly</h1>
+  <div class="search">
+    <input type="text" placeholder="Start Browising!" required name="" id="inp">
+    <button onclick="browse ()"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+  <!-- Project -->
+  <script>
+  
+    function browse()
+    {
+      document.body.innerHTML = '<iframe src="https://www.bing.com/search?q=' + document.getElementById("inp").value + '"></iframe>'
+    }
+  </script>
+<p>    Developed by:   
+                      DASARI SRIKANTH    copyrights@0505Dasari       </p>
+
+</body>
+</html>
